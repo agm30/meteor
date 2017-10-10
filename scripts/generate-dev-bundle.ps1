@@ -199,6 +199,10 @@ cp "$DIR\mongodb\$mongo_name\bin\mongo.exe" $DIR\mongodb\bin
 rm -Recurse -Force $mongo_zip
 rm -Recurse -Force "$DIR\mongodb\$mongo_name"
 
+
+# Remove the npm-cache, accumulated during this build
+rm -Recurse -Force "$DIR\npm-cache"
+
 cd "$DIR"
 
 # mark the version
